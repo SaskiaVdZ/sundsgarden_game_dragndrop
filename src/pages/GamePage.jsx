@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from 'react';
 import { useDrag } from '@use-gesture/react';
 import { Instructions } from "../components/Instructions";
-import profileFrame from '../components/Images/profileFrame.png';
+import ProfilePhoto from '../components/Images/ProfilePhoto.png';
+import { Elementone } from "../components/Elements/Elementone";
 
 
 export const GamePage = () => {
@@ -21,7 +22,8 @@ y:params.offset[1],
         left: elementPos.x,
         touchAction: 'none',
       }}>
-         <img className="profileFrame" src={profileFrame}/>
+         
+         <Elementone/>
       </div>
 
     <Instructions/>
