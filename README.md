@@ -64,7 +64,7 @@ Start the server
 
 ## Documentation
 
-This game was built as the final front end project for the course tech for women at Sundsgården. The assignment was to build some kind of game using React.
+This game was built as the final front end project for the course tech for women at Sundsgården. The assignment was to build a game using React.
 
 We started of by deciding on a functionality and coming up with a design idea. Then we sketched up the general user flow and set up the basic project structure. After that we divided the different features among the members of the team to get started with the logic. 
 
