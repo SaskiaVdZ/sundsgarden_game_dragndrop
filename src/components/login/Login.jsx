@@ -4,46 +4,69 @@ import "./Login.css";
 import axios from "axios";
 import { useAuth } from "../../reducers/AuthProvider";
 
+
+
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(""); // to store and display any error messages
   const navigate = useNavigate();
   const { dispatch } = useAuth();
+  const [isAuthenticated, setAuthenticated] = useState(false);
   // const { userId } = useParams();
 
-  const checkUser = (users) => {
+  //const checkUser = (users) => {
     // Function to validate the user
-    const user = users.find(
-      (user) => user.email === email && user.password === password
-    );
-    console.log(user);
+    //const user = users.find(
+     // (user) => user.email === email && user.password === password
+   // );
+   // console.log(user);
 
-    if (user && user.email === email && user.password === password) {
-      return user;
+
+   const checkUser = () => {
+    const validCredentials = {
+      email: "imagine@gmail.com",
+      password: "imagine123",
+    };
+    const handleLogin = (email, password) => {
+      if (email === 'imagine@gmail.com' && password === 'imagine123') {
+        setAuthenticated(true);
+      }
+    };
+  
+    if (email === validCredentials.email && password === validCredentials.password) {
+      handleLogin(email, password); // Call handleLogin function for successful login
+      return {
+        username: "Test User",
+        id: 1,
+      };
     } else {
       navigate("/login");
       return null;
     }
   };
 
+
   const handleSubmit = async (e) => {
     e.preventDefault(); // prevent the default behavior of a form when it is submitted.
 
     try {
       //checking if the login credentials are valid
-      const response = await axios.get("http://localhost:6001/users");
-      const user = checkUser(response.data);
+     // const response = await axios.get("http://localhost:6001/users");
+      //const user = checkUser(response.data);
 
-      if (email === "" || password === "") {
+      if (email && password) {
+        const user = checkUser(); // Call checkUser
+  
+        if (user) {
+          successMessage(user);
+        } else {
+          errorMessage("Invalid username or password. Please try again!");
+        }
+      } else {
         alert("All fields are required!");
         resetForm();
-        return;
-      } else if (user) {
-        successMessage(user);
-      } else {
-        console.error(error);
-        errorMessage("Invalid username or password. Please try again!");
       }
     } catch (error) {
       console.log(error);

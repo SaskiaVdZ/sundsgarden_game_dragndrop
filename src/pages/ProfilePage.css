@@ -4,9 +4,12 @@
     align-items: center;
     padding: 4rem;
     width: 100%;
+    
 }
 
 .container {
     margin-top: 8rem;
     margin-bottom: 5rem;
+    height: 600px;
+    
 }
