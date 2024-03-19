@@ -47,7 +47,6 @@ const Login = () => {
     }
   };
 
-  
 
   const handleSubmit = async (e) => {
     e.preventDefault(); // prevent the default behavior of a form when it is submitted.
