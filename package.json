@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "proxy": "http://localhost:6001",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"vite\"",
     "build": "vite build",
