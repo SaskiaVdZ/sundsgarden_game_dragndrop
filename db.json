@@ -1,9 +1,9 @@
 {
   "users": [
     {
-      "username": "maria",
-      "email": "bla@gmail.com",
-      "password": "1234",
+      "username": "John",
+      "email": "imagine@gmail.com",
+      "password": "imagine123",
       "id": 1
     },
     {
@@ -95,6 +95,12 @@
       "email": "",
       "password": "",
       "id": 17
+    },
+    {
+      "username": "John Lennon",
+      "email": "imagine@gmail.com",
+      "password": "imagine",
+      "id": 18
     }
   ]
 }

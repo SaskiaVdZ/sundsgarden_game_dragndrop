@@ -1,10 +1,11 @@
 .about-page-container {
     width: 100%;
     max-width: 1440px;
-    height: auto;
+    height: 600px;
     background-color: rgba(234, 207, 196, 0.89);
     padding-top: 20px;
     padding-bottom: 30px;
+
 }
 
 .about-title {
@@ -25,7 +26,7 @@ p {
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
     color: rgba(139, 137, 137, 1);
 }
 
