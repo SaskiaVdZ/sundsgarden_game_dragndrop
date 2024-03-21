@@ -1,0 +1,79 @@
+/* STYLING FOR: RegisterAccountPage.jsx + Register.jsx */
+
+/* === Placement styling - start === */
+.register-page-container {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    background-color: rgba(234, 207, 196, 0.89);
+    display: flex;
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+/* === Placement styling - end === */
+
+/* === Titel styling - start === */
+.register-title {
+    font-size: 40px;
+    font-weight: 400px;
+    line-height: 48px;
+    letter-spacing: 0.32em;
+    text-align: center;
+    color: rgba(139, 137, 137, 1);
+    font-family: 'Lato', sans-serif;
+    padding-left: 2rem; 
+}
+/* === Titel styling - end === */
+
+/* === Radio button - start === */
+.register-form {
+    text-align: left;
+    display: inline-block;
+}
+
+.register-option1, .register-option2 {
+    font-family:  'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    padding: 10px;
+    color: rgba(139, 137, 137, 1);
+}
+
+.register-form-input {  
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    accent-color: rgba(103, 80, 164, 1);
+}
+
+.register-text-option {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(139, 137, 137, 1);
+}
+/* === Radio button - end === */
+
+/* === Register form - start === */
+::placeholder {
+    color: rgba(26, 26, 26, 1);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+/* === Register form - end === */

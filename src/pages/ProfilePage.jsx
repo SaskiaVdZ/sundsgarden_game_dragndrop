@@ -1,5 +1,10 @@
-import React from "react";
+import "./ProfilePage.css";
+import { ProfileDetails } from "../components/profile/ProfileDetails";
 
 export const ProfilePage = () => {
-  return <div>ProfilePage</div>;
+  return (
+    <>
+      <ProfileDetails />
+    </>
+  );
 };

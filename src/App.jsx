@@ -1,23 +1,20 @@
-import "./App.css";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { HomePage } from "./pages/HomePage";
-import  ErrorLogin  from "./components/ErrorLogin";
-import { GamePage } from "./pages/GamePage";
-import { ProfilePage } from "./pages/ProfilePage";
-import Login from "./components/Login";
+import "../src/App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Footer } from "./components/footer/Footer";
+import { Header } from "./components/header/Header";
+import routes from "./routes/routes";
+import { AuthProvider } from "./reducers/AuthProvider";
 
 function App() {
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="*" element={<ErrorLogin />} />
-          <Route path="/game/:userId" element={<GamePage />} />
-          <Route path="/profile/:userId" element={<ProfilePage />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Header />
+          {routes}
+          <Footer />
+        </Router>
+      </AuthProvider>
     </>
   );
 }

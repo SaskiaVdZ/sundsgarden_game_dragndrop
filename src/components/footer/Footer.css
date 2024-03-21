@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  width: 80vp;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #8B8989;
+  line-height: 5;
+  letter-spacing: 1%;
+  margin: 2rem;
+}
+
+.gh-link {
+  font-weight: normal;
+}
+
+span {
+  color: #9CE5CA;
+}

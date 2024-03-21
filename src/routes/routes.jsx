@@ -1,15 +1,29 @@
 import { Route, Routes } from "react-router-dom";
-import { HomePage } from "../pages/HomePage";
-import { GamePage } from "../pages/GamePage";
+import GamePage from "../pages/GamePage";
 import { ProfilePage } from "../pages/ProfilePage";
-import { ErrorLogin } from "../components/ErrorLogin";
+import { AboutPage } from "../pages/AboutPage";
+import { LoginAccountPage } from "../pages/LoginAccountPage";
+import { RegisterAccountPage } from "../pages/RegisterAccountPage";
+import ErrorLogin from "../components/ErrorLogin";
+import ProtectedRoute from "./protectedRoutes";
 
 const routes = (
   <Routes>
-    <Route path="/" element={<HomePage />} />
+    <Route path="/" element={<LoginAccountPage />} />
+    <Route path="/about" element={<AboutPage />} />
+    <Route path="/login" element={<LoginAccountPage />} />
+    <Route path="/register-account" element={<RegisterAccountPage />} />
+    {/* Private routes */}
+    <Route
+      path="/game/:userId"
+      element={<ProtectedRoute element={<GamePage />} />}
+    />
+    <Route
+      path="/profile/:userId"
+      element={<ProtectedRoute element={<ProfilePage />} />}
+    />
+    {/* Error page */}
     <Route path="*" element={<ErrorLogin />} />
-    <Route path="/game/:userId" element={<GamePage />} />
-    <Route path="/profile/:userId" element={<ProfilePage />} />
   </Routes>
 );
 
