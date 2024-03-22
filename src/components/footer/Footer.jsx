@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <div className="footer">
-      <p>
+      <p className="footerText">
         Made with{" "}
         <i className="fa-solid fa-heart" style={{ color: "#9ce5ca" }}></i> in
         Sweden by{" "}

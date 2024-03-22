@@ -36,7 +36,7 @@ const Login = () => {
     if (email === validCredentials.email && password === validCredentials.password) {
       handleLogin(email, password); // Call handleLogin function for successful login
       return {
-        username: "Test User",
+        username: "John",
         id: 1,
       };
     } else {
@@ -79,7 +79,7 @@ const Login = () => {
 
   const successMessage = (user) => {
     dispatch({ type: "LOGIN", payload: { user } });
-    alert(`Hi ${user.username}`);
+    alert(`Welcome back ${user.username}!`);
     navigate(`/game/${user.id}`); //  access to the user's game page after login
 
     // localStorage.setItem("user", JSON.stringify(user.id));
@@ -106,7 +106,7 @@ const Login = () => {
           <input
             value={email}
             type="text"
-            placeholder="Email"
+            placeholder="imagine@gmail.com"
             onChange={(e) => setEmail(e.target.value)}
           />
         </label>
@@ -114,7 +114,7 @@ const Login = () => {
           <input
             value={password}
             type="Password"
-            placeholder="Password"
+            placeholder="imagine123"
             onChange={(e) => setPassword(e.target.value)}
           />
         </label>

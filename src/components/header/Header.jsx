@@ -39,7 +39,7 @@ export const Header = () => {
 
   return (
     <div className="header">
-      <div>
+      <div className="logoBox">
         <NavLink to="/">
           <h1 className="logo">IMAGINARIUM</h1>
         </NavLink>

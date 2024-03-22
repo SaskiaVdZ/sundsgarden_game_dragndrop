@@ -1,6 +1,7 @@
 .footer {
   display: flex;
-  width: 80vp;
+  max-width: 1440px;
+  width:100%;
   justify-content: center;
   align-items: center;
   font-family: 'Inter', sans-serif;
@@ -13,6 +14,12 @@
 
 .gh-link {
   font-weight: normal;
+}
+
+.footerText{
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 5;
 }
 
 span {

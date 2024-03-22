@@ -1,5 +1,5 @@
 #root {
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
   text-align: center;
   background-color: #edecec;
@@ -31,9 +31,7 @@
   }
 }
 /* I suggest we put the css for the different components in their own css files, is that ok? /Saskia*/
-.card {
-  padding: 2em;
-}
+
 
 .read-the-docs {
   color: #888;
