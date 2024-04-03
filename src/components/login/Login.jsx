@@ -106,7 +106,7 @@ const Login = () => {
           <input
             value={email}
             type="text"
-            placeholder="imagine@gmail.com"
+            placeholder="To log in type this email address: imagine@gmail.com"
             onChange={(e) => setEmail(e.target.value)}
           />
         </label>
@@ -114,7 +114,7 @@ const Login = () => {
           <input
             value={password}
             type="Password"
-            placeholder="imagine123"
+            placeholder="and this password: imagine123"
             onChange={(e) => setPassword(e.target.value)}
           />
         </label>

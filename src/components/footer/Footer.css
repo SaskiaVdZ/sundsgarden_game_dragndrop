@@ -20,7 +20,8 @@
 .footerText{
   font-family: 'Inter', sans-serif;
   font-size: 16px;
-  line-height: 5;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 span {

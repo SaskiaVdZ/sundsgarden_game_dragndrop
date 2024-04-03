@@ -1,3 +1,12 @@
+.container {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    min-height: 600px;
+    width: 100%;
+    max-width: 1440px;
+    
+}
+
 .ProfileContainer {
     display: flex;
     justify-content: center;
@@ -5,11 +14,3 @@
     padding: 4rem;
 }
 
-.container {
-    margin-top: 8rem;
-    margin-bottom: 5rem;
-    height: 600px;
-    width: 100%;
-    max-width: 1440px;
-    min-width: 320px;
-}
