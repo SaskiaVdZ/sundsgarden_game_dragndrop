@@ -21,7 +21,7 @@ export const ProfileDetails = () => {
       axios
         .get("http://localhost:6001/users")
         .then((response) => {
-          console.log("Response.data", response.data);
+          //console.log("Response.data", response.data);
           const loggedInUser = response.data.find(
             (userData) => userData.id === parseInt(userId)
           );
